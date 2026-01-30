@@ -27,6 +27,7 @@ defmodule Negotiator.MixProject do
     [
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 
@@ -38,8 +39,7 @@ defmodule Negotiator.MixProject do
     [
       name: "negotiator",
       licenses: ["MIT"],
-      files: ~w(lib priv .formatter.exs mix.exs README* readme* LICENSE*
-                license* CHANGELOG* changelog* src),
+      files: ~w(lib test .formatter.exs mix.exs README*),
       links: %{"GitHub" => "https://github.com/alexander-schoch-linuxdays/negotiator"}
     ] 
   end
